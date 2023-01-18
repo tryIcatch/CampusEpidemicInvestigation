@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/school?useUnicode=true&character=utf8&useSSL=false&serverTimezone=UTC
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
+
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: sch_
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
